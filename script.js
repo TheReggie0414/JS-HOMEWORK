@@ -1,126 +1,97 @@
+/* Literals */
 
-/* Confirms */
-
-/* let answers = [
-  confirm("Вам подобається колір синій?"),
-  confirm("Ви вважаєте, що сонце світлить?"),
-  confirm("Ви любите піцу?")
-]; */
-
-
-/* Prompts */
-
-/* let answers = [];
-
-answers[0] = prompt("Яке ваше ім'я?");
-answers[1] = prompt("Скільки вам років?");
-answers[2] = prompt("Яка ваша улюблена книга?");
-
-console.log(answers); */
-
-/* Item access */
-
-/* let arr = ["apple", "banana", "orange", "grape"];
-
-let index = prompt("Введіть індекс у масиві:");
-
-if (index >= 0 && index < arr.length) {
-  let element = arr[index];
-  console.log("Значення елемента з індексом " + index + ": " + element);
-} else {
-  console.log("Введено недійсний індекс.");
-}
- */
+/* const cat = {
+  name: 'Mickael',
+  age: 8,
+  color: 'white'
+};
 
 
-/* Item change */
-
-/* let arr = ["apple", "banana", "orange", "grape"];
-
-let index = prompt("Введіть індекс у масиві:");
-let value = prompt("Введіть значення для цього індексу:");
-
-if (index >= 0 && index < arr.length) {
-  arr[index] = value;
-  console.log("Значення за індексом " + index + " було змінено на: " + value);
-} else {
-  console.log("Введено недійсний індекс.");
-}
-
-console.log("Оновлений масив:", arr); */
+console.log(name); */
 
 
-/* IndexOf Word */
-
-/* let sentence = prompt("Введіть рядок із кількох слів:");
-let targetWord = prompt("Введіть слово, яке потрібно знайти:");
-
-let words = sentence.split(" ");
-
-let index = words.indexOf(targetWord);
-
-if (index !== -1) {
-  let position = index + 1;
-  console.log("Слово '" + targetWord + "' знаходиться на позиції " + position + " у рядку.");
-} else {
-  console.log("Слово '" + targetWord + "' не знайдено у рядку.");
-}
-
- */
-
-/* Reverse */
-
-/* let sentence = prompt("Введіть рядок із кількох слів:");
-let targetWord = prompt("Введіть слово, яке потрібно знайти:");
-
-let words = sentence.split(" ");
-
-let index = words.indexOf(targetWord);
-
-if (index !== -1) {
-  let position = index + 1;
-  console.log("Слово '" + targetWord + "' знаходиться на позиції " + position + " у рядку.");
-} else {
-  console.log("Слово '" + targetWord + "' не знайдено у рядку.");
-} */
 
 
-/* Destruct */
 
-/* let inputString = prompt("Введіть рядок:");
+/* Literals expand */
 
-let [firstLetter, , , , fifthLetter, , , , ninthLetter] = inputString;
 
-console.log("Перша літера:", firstLetter);
-console.log("П'ята літера:", fifthLetter);
-console.log("Дев'ята літера:", ninthLetter); */
 
-/* Destruct default */
+/* const dog = {
+  name: prompt('Введите имя собаки: '),
+  age: prompt('Введите возраст собаки: '),
+  color: prompt('Введите цвет собаки: ')
+};
 
-/* let inputString = prompt("Введіть рядок:");
+console.log(dog); */
 
-let [, secondLetter = "!", , fourthLetter = "!", fifthLetter = "!"] = inputString;
 
-console.log("Друга літера:", secondLetter);
-console.log("Четверта літера:", fourthLetter);
-console.log("П'ята літера:", fifthLetter); */
 
+
+/* Literals copy */
+
+/* const dog = {
+  name: prompt('Введите имя собаки: '),
+  age: prompt('Введите возраст собаки: '),
+  color: prompt('Введите цвет собаки: ')
+};
+
+const copyDog = {...dog};
+
+console.log(copyDog); */
+
+
+
+/* Destruct array */
+
+/* let arr = [1,2,3,4,5, "a", "b", "c"]
+
+const [odd1, even1, odd2, even2, odd3] = arr;
+
+const restOfFields = arr.slice(5);
+
+console.log(odd1);
+console.log(restOfFields); */
+
+
+
+/* Destruct string */
 /* 
-Map Capitalize */
+let arr = [1, "abc"]
 
-/* function capitalize(word) {
-  return word.charAt(0).toUpperCase() + word.slice(1);
-}
+const [number, str] = arr;
 
-let inputString = prompt("Введіть рядок:");
+const splitAbc = str.split('');
 
-let words = inputString.split(" ");
-let capitalizedWords = words.map(capitalize);
+const [s1,s2,s3] = splitAbc;
 
-let result = capitalizedWords.join(" ");
+console.log(number, s1,s2,s3); */
 
-console.log(result);
+
+/* Destruct 2 */
+
+/* let obj = {name: 'Ivan',
+           surname: 'Petrov',
+           children: [{name: 'Maria'}, {name: 'Nikolay'}]}
+
+
+const {children: [name1, name2]} = obj;
+
+console.log(name1,name2);
  */
+
+
+
+
+/* Destruct 3 */
+
+
+/* let arr = [1,2,3,4, 5,6,7,10];
+
+const [a,b] = arr;
+const length = arr.length;
+
+console.log(a,b,length); */
 
 
 
