@@ -1,103 +1,80 @@
-/* Literals */
-
-/* const cat = {
-  name: 'Mickael',
-  age: 8,
-  color: 'white'
-};
+/* Temperature */
 
 
-console.log(name); */
+/* toFahrenheit = (Celsium) => {
+  return Fahrenheit = Celsium *2 + 30;
+}
+
+toFahrenheit(20);
+
+toCelsuim = (Fahrenheit) => {
+  return Celsuim = (Fahrenheit - 30) / 2;
+}
+
+toCelsuim(80); */
+
+/* RGB */
 
 
+/* function toHex(num) {
+  const hex = num.toString(16);
+  return hex.length === 1 ? '0' + hex : hex;
+}
+
+function numberToRGB(r, g, b) {
+  const red = toHex(r);
+  const green = toHex(g);
+  const blue = toHex(b);
+
+  return `#${red}${green}${blue}`;
+}
+
+const r = 255;
+const g = 127;
+const b = 64;
+const colorCode = numberToRGB(r, g, b);
+console.log(colorCode); */
+
+/* Flats */
+
+/* function findFlatLocation(totalFloors, flatsPerFloor, flatNumber) {
+  const flatsPerEntrance = totalFloors * flatsPerFloor;
+
+  const entrance = Math.ceil(flatNumber / flatsPerEntrance);
+
+  const flatOnEntrance = (flatNumber - 1) % flatsPerEntrance;
+  const floor = Math.floor(flatOnEntrance / flatsPerFloor) + 1;
+
+  return { entrance, floor };
+}
+
+const totalFloorsInBuilding = 9;
+const flatsPerFloor = 4;
+
+const flatNumberToFind = 20;
+const flatLocation = findFlatLocation(totalFloorsInBuilding, flatsPerFloor, flatNumberToFind);
+console.log(flatLocation); */
 
 
-
-/* Literals expand */
-
+/* Login And Password */
 
 
-/* const dog = {
-  name: prompt('Введите имя собаки: '),
-  age: prompt('Введите возраст собаки: '),
-  color: prompt('Введите цвет собаки: ')
-};
+/* function loginAndPassword(correctLogin, correctPassword) {
+  const enteredLogin = prompt("Введіть логін:");
+  const enteredPassword = prompt("Введіть пароль:");
 
-console.log(dog); */
+  const isCorrect = enteredLogin === correctLogin && enteredPassword === correctPassword;
 
+  return isCorrect;
+}
 
+const correctLogin = "admin";
+const correctPassword = "password";
 
+const isLoggedIn = loginAndPassword(correctLogin, correctPassword);
 
-/* Literals copy */
-
-/* const dog = {
-  name: prompt('Введите имя собаки: '),
-  age: prompt('Введите возраст собаки: '),
-  color: prompt('Введите цвет собаки: ')
-};
-
-const copyDog = {...dog};
-
-console.log(copyDog); */
-
-
-
-/* Destruct array */
-
-/* let arr = [1,2,3,4,5, "a", "b", "c"]
-
-const [odd1, even1, odd2, even2, odd3] = arr;
-
-const restOfFields = arr.slice(5);
-
-console.log(odd1);
-console.log(restOfFields); */
-
-
-
-/* Destruct string */
-/* 
-let arr = [1, "abc"]
-
-const [number, str] = arr;
-
-const splitAbc = str.split('');
-
-const [s1,s2,s3] = splitAbc;
-
-console.log(number, s1,s2,s3); */
-
-
-/* Destruct 2 */
-
-/* let obj = {name: 'Ivan',
-           surname: 'Petrov',
-           children: [{name: 'Maria'}, {name: 'Nikolay'}]}
-
-
-const {children: [name1, name2]} = obj;
-
-console.log(name1,name2);
- */
-
-
-
-
-/* Destruct 3 */
-
-
-/* let arr = [1,2,3,4, 5,6,7,10];
-
-const [a,b] = arr;
-const length = arr.length;
-
-console.log(a,b,length); */
-
-
-
-
-
-
-
-
-
+if (isLoggedIn) {
+  console.log("Вхід виконаний успішно");
+} else {
+  console.log("Невірний логін або пароль");
+} */
