@@ -1,0 +1,32 @@
+.block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.square {
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    cursor: pointer;
+}
+
+#btnSend {
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cat {
+    background: url('https://bestmemes.ucoz.net/_nw/44/89692088.png') 0 0/contain no-repeat;
+}
